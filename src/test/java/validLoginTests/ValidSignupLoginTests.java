@@ -27,5 +27,7 @@ public class ValidSignupLoginTests extends BaseTest {
 		loginPage.signinUsing("shinu4050@gmail.com","test@Koovs");
 		productDetails.goTo("/oxford-palm-tree-shirt-120439.html").selectSize("Small").clickAddToBag().clickGoToBag();
 		cartPage.clickProceedToCheckout();
+		orderSummaryPage.clickConfirmAndPay();
+		paymentPage.enterCardNumber("1234567890123456").selectExpiryMonth("12").selectExpiryYear("2019");
 	}
 }

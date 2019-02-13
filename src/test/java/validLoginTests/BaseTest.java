@@ -18,6 +18,8 @@ public abstract class BaseTest {
 	SearchResultPage searchResultPage;
 	ProductDetails productDetails;
 	CartPage cartPage;
+	OrderSummaryPage orderSummaryPage;
+PaymentPage paymentPage;
 	
 	@BeforeTest
 	public void initialize() {		
@@ -30,6 +32,8 @@ public abstract class BaseTest {
 		searchResultPage = new SearchResultPage(driver);
 		productDetails = new ProductDetails(driver);
 		cartPage = new CartPage(driver);
+		orderSummaryPage = new OrderSummaryPage(driver);
+		paymentPage = new PaymentPage(driver);
 	}
 	
 	@AfterTest
