@@ -10,16 +10,16 @@ import pages.*;
 public abstract class BaseTest {
 	
 	WebDriver driver;	
-	HomePage homePage;
-	LoginPage loginPage;
-	SignupPage signupPage;
-	UserDashboardPage userDashboardPage;
-	UserAccountPage userAccountPage;
-	SearchResultPage searchResultPage;
-	ProductDetails productDetails;
-	CartPage cartPage;
-	OrderSummaryPage orderSummaryPage;
-PaymentPage paymentPage;
+	protected HomePage homePage;
+	protected LoginPage loginPage;
+	protected SignupPage signupPage;
+	protected UserDashboardPage userDashboardPage;
+	protected UserAccountPage userAccountPage;
+	protected SearchResultPage searchResultPage;
+	protected ProductDetails productDetails;
+	protected CartPage cartPage;
+	protected OrderSummaryPage orderSummaryPage;
+protected PaymentPage paymentPage;
 	
 	@BeforeTest
 	public void initialize() {		

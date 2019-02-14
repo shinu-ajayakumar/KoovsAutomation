@@ -6,8 +6,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "Features"
-		,glue={"stepDefinitions"}
+		features = "cucumberTestFeatures"
+		,glue={"cucumberTest.stepDefinitions"}
 		)
 
 public class TestRunner {
